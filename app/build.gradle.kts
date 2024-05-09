@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.hemu1089.uhf"
-        minSdk = 23
+        minSdk = 19
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
