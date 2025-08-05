@@ -1,13 +1,10 @@
-import org.gradle.internal.impldep.bsh.commands.dir
-
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("maven-publish")
 }
 
 android {
-    namespace = "com.hemu1089.rf_reader"
+    namespace = "com.app.drinker"
     compileSdk = 36
 
     defaultConfig {
@@ -40,9 +37,9 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.*"))))
-    implementation(files("libs/jxl.jar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation (libs.breathalyzer.sdk)
+
 }

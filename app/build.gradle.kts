@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.hemu1089.uhf"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.hemu1089.uhf"
-        minSdk = 19
-        targetSdk = 34
+        minSdk = 28
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -40,6 +40,7 @@ android {
 
 dependencies {
     implementation(project(":rf_reader"))
+    implementation(project(":drinker"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

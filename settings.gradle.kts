@@ -29,3 +29,4 @@ dependencyResolutionManagement {
 rootProject.name = "uhf"
 include(":app")
 include(":rf_reader")
+include(":drinker")
