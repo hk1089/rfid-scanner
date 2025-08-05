@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":rf_reader"))
+   // implementation(project(":rf_reader"))
     implementation(project(":drinker"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
